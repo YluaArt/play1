@@ -1,11 +1,79 @@
 {% extends 'cripto/base.html' %}
 {%load static%}
 {%block content%}
-<img src='{%static "images/hom.jpg"%}'>
+<div></div><img src='{%static "images/home.jpg.jpeg"%}'>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Четыре формы в два ряда</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container">
+        <!-- 1 форма -->
+        <form class="form-container">
+            <label for="name">1.Give</label>
+            <input type="text" id="name" name="name" required>
+        </form>
+
+        <!-- 2 форма -->
+        <form class="form-container">
+            <label for="username">2.Take</label>
+            <input type="text" id="username" name="username" required>
+            
+        </form>
+
+        <!-- 3 форма -->
+        <form class="form-container">
+            <label for="username">3.Exchange details</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <!-- Поле согласия с политикой конфиденциальности -->
+    <div class="policy-agreement">
+        <id="policy" name="policy" required>
+        <label for="policy">
+        </label>
+    </div><label class="agreement-label">
+        <input type="checkbox" id="agreement" required>
+        <span>I agree with<a href="terms.html" target="_blank"> the rules</a></span>
+    </label>
+    
+     <!-- Поле согласия с политикой конфиденциальности -->
+     <div class="policy-agreement">
+        <id="policy" name="policy" required>
+        <label for="policy">
+    </label>
+        
+    </div>
+            <button type="submit">Start exchange</button>
+        </form>
+
+        <!-- 4 форма -->
+        <form class="form-container">
+            <label for="name">ALL</label>
+            <input type="text" id="name" name="name" required>
+        </form>
+
+        <!-- 5 форма -->
+        <form class="form-container">
+            <label for="name">ALL/CRYPTO</label>
+            <input type="text" id="name" name="name" required>
+        </form>
+        <!-- 6 форма -->
+        <form class="form-container">
+            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Rate:</button>
+        </form>
+    </div>
+    <script src="{%static 'js/scripts.js'%}"></script>
+</body>
+</html>
+
+
+
 {%endblock%}
-
-
-
-
-
-
+</main>
