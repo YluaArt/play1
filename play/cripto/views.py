@@ -4,6 +4,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .forms import *
+from django.http import JsonResponse
+from .curs_api import get_course
+
+
+
+
+def get_data(request):
+    currencies  = get_course()
+    return JsonResponse(currencies)
 def home(request):
     return render (request, 'cripto/home.html') 
 # Create your views here.
@@ -36,3 +45,5 @@ def policy(request):
     return render (request, 'cripto/policy.html')
 def about(request):
     return render (request, 'cripto/about.html')
+
+

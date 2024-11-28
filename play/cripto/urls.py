@@ -7,5 +7,6 @@ path('contacts/', contacts, name='contacts'),
 path('rules/', rules, name='rules'),
 path('policy/', policy, name='policy'),
 path('about/', about, name='about'),
+path('get-data/', get_data, name='get_data'),
 
 ]

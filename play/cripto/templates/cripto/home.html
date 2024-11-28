@@ -2,15 +2,9 @@
 {%load static%}
 {%block content%}
 <div></div><img src='{%static "images/home.jpg.jpeg"%}'>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Четыре формы в два ряда</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+
+
+
     <div class="background-container">
         <!-- 1 форма -->
         <form class="form-container">
@@ -52,7 +46,7 @@
         </form>
 
         <!-- 4 форма -->
-        <form class="form-container">
+        <form class="form-container" id="formcoin">
             <label for="name">ALL</label>
             <input type="text" id="name" name="name" required>
         </form>
@@ -70,10 +64,8 @@
         </form>
     </div>
     <script src="{%static 'js/scripts.js'%}"></script>
-</body>
-</html>
+</main>
 
 
 
 {%endblock%}
-</main>

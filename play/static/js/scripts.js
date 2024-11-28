@@ -1,12 +1,19 @@
-async function fetchData(){
 
+async function fetchData(){
     try{    
-        let res = await fetch("https://api.coinlore.net/api/tickers/");
+        let res = await fetch("/get-data/");
         let resJs = await res.json();
         console.log(resJs);
+        return true;
     }catch (error){
         console.error("Error ");
     }
     }
-    fetchData() 
-    alert("end");
+const coins = fetchData();
+console.log(coins);
+const div = document.createElement("div");
+coins.array.forEach(element=> {
+    div.innerHTML += `${element.name}<br>`
+
+});
+console.log(div);
